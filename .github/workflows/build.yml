@@ -35,4 +35,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=p-nyke_SonarQube_Assignment_dd58fad4-edb2-4d1c-a020-0af4d7750319 -Dsonar.projectName='SonarQube_Assignment'
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=SonarQube-Assignment -Dsonar.projectName='SonarQube-Assignment'
