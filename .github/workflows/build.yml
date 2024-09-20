@@ -10,7 +10,7 @@ jobs:
   build:
     name: Build and analyze
     runs-on: ubuntu-latest
-     
+    
     steps:
       - uses: actions/checkout@v4
         with:
@@ -35,4 +35,4 @@ jobs:
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
-        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=SonarQube-Assignment -Dsonar.projectName='SonarQube-Assignment'
+        run: mvn -B verify org.sonarsource.scanner.maven:sonar-maven-plugin:sonar -Dsonar.projectKey=p-nyke_SonarQube_Assignment_9251b29d-2fd9-4b32-bcdd-c0df1d164477 -Dsonar.projectName='SonarQube_Assignment'
